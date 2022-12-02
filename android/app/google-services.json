@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "155812127703",
+    "project_id": "thaimeet-d3ddb",
+    "storage_bucket": "thaimeet-d3ddb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155812127703:android:b5e8be794341a639732192",
+        "android_client_info": {
+          "package_name": "com.example.thaimeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155812127703-jb7b3ocv935hr3aq9febfso3gk7pke85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXnCPJ_oGrneOyuLgaWei9KKimV5vp9X4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155812127703-jb7b3ocv935hr3aq9febfso3gk7pke85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
