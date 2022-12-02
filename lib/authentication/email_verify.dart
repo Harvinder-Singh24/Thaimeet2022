@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:show_up_animation/show_up_animation.dart';
-import 'package:thaimeet/Screens/mainscreen.dart';
+import 'package:thaimeet/Screens/inappscreens/mainscreen.dart';
 
 import '../services/authservice.dart';
 

@@ -2,7 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:thaimeet/Screens/mainscreen.dart';
+import 'package:thaimeet/Screens/homescreen.dart';
+import 'package:thaimeet/Screens/inappscreens/mainscreen.dart';
 import 'package:thaimeet/authentication/register.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -28,8 +29,10 @@ class _SplashScreenState extends State<SplashScreen> {
         () => {
               if (repeat == true)
                 {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MainScreen())),
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const HomeScreen())),
                 }
               else
                 {

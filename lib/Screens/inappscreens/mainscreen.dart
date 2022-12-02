@@ -12,41 +12,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   bool _isvisible = false;
   int currentIndex = 0;
-  final _dialog = RatingDialog(
-    initialRating: 1.0,
-    // your app's name?
-    title: const Text(
-      'Rate your Journey',
-      textAlign: TextAlign.center,
-      style: TextStyle(
-        fontSize: 15,
-        fontWeight: FontWeight.bold,
-      ),
-    ),
-    // encourage your user to leave a high rating?
-    message: const Text(
-      'Tap a star to set your rating. Add more description here if you want.',
-      textAlign: TextAlign.center,
-      style: TextStyle(fontSize: 10),
-    ),
-    // your app's logo?
-    image: Image.asset("assets/logo.png", width: 100, height: 100),
-    submitButtonText: 'Submit',
-    submitButtonTextStyle: const TextStyle(fontSize: 20),
-    starSize: 20,
-    onCancelled: () => print('cancelled'),
-    onSubmitted: (response) {
-      print('rating: ${response.rating}, comment: ${response.comment}');
 
-      // TODO: add your own logic
-      if (response.rating < 3.0) {
-        // send their comments to your email or anywhere you wish
-        // ask the user to contact you instead of leaving a bad review
-      } else {
-        print("Review App");
-      }
-    },
-  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -184,17 +150,6 @@ class _MainScreenState extends State<MainScreen> {
                             style: TextStyle(fontSize: 12),
                           )
                         ]),
-                    GestureDetector(
-                        onTap: () {
-                          showDialog(
-                            context: context,
-                            barrierDismissible:
-                                true, // set to false if you want to force a rating
-                            builder: (context) => _dialog,
-                          );
-                        },
-                        child: const Icon(Icons.star,
-                            color: Colors.yellow, size: 30)),
                     Column(children: const [
                       CircleAvatar(
                         radius: 20,

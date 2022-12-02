@@ -39,9 +39,10 @@ dependencies:
   google_fonts: ^3.0.1
   intl: ^0.17.0
   pin_code_fields: ^7.4.0
+  rating_dialog: ^2.0.4
   shared_preferences: ^2.0.15
   show_up_animation: ^2.0.0
-  rating_dialog: ^2.0.4
+  url_launcher: ^6.1.7
 
 dev_dependencies:
   flutter_lints: ^2.0.0
